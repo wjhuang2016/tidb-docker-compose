@@ -495,3 +495,10 @@ max-open-files = 1024
 # num-threads = 8
 # stream channel window size, stream will be blocked on channel full.
 # stream-channel-window = 128
+
+## Options for `Titan`.
+[rocksdb.titan]
+## Enables or disables `Titan`. Note that Titan is still an experimental feature. Once
+## enabled, it can't fall back. Forced fallback may result in data loss.
+## default: false
+enabled = true
